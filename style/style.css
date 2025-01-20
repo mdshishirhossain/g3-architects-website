@@ -14,6 +14,8 @@
 
 /* shared styles */
 
+
+
 .dark-2 {
     color: #424242;
 }
@@ -26,6 +28,10 @@
     display: flex;
 }
 
+.flex-1{
+    flex: 1;
+}
+
 .bg-primary {
     /* background-color: rgba(255, 144, 14, 0.1); */
     background-color: rgba(0, 0, 0, 0.1);
@@ -33,6 +39,10 @@
 
 .text-center {
     text-align: center;
+}
+
+.margin-b{
+    margin-bottom: 30px;
 }
 
 .section-heading {
@@ -99,6 +109,7 @@ main {
 
 }
 
+
 .banner-info {
     max-width: 580px;
     margin: 0 auto;
@@ -120,7 +131,7 @@ main {
 
 
 section {
-    padding: 35px 150px;
+    padding: 35px 90px;
 }
 
 
@@ -153,11 +164,135 @@ section {
     font-weight: 500;
 }
 
+.features-container{
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 80px;
+    
+}
+
+.feature-heading{
+    border-left: 4px solid #FF900E ;
+    padding-left: 20px;
+}
+
+.feature-info-container {
+    margin-top: 30px;
+}
+
+.feature-img-container{
+    /* border: 1px solid red; */
+}
+.feature-img-container img{
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+.features-card-container{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-card{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    
+}
+
+.card-heading{
+    font-size: 1rem;
+}
+
+.card-description{
+    font-size: 0.75rem;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.experience-level{
+    text-align: center;
+    margin-left: 230px;
+    margin-top: -90px;
+}
+
+.exp-badge{
+    background-color: #FF900E;
+    color: #ffffff;
+    padding: 25px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+
+#exp-year{
+    font-size: 2.5rem;
+}
+
+#exp-text{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.facts{
+    margin: 50px auto;
+}
+
+.sponsor-heading-description{
+    max-width: 420px;
+}
+
+.facts-section-description{
+    max-width: 420px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    margin: 25px 0;
+}
+
+.facts-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 35px 50px;
+}
+
+.fact-card{
+    align-content: center;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    aspect-ratio: 1.1;
+    width: 100%;
+}
+
+.card-number{
+    font-size: 2rem;
+    margin: 5px 0 8px 0;
+}
+
+
+.sponsors-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.sponsor img{
+    width: 100%;
+}
+
+
+
 @media screen and (max-width: 576px) {
 
     .navbar,
     .navbar-items,
-    .teams-container {
+    .teams-container,
+    .features-container {
         flex-direction: column;
         gap: 20px;
     }
@@ -184,6 +319,31 @@ section {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .facts-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
+
+    .experience-level{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -40px;
+    }
+
+    .exp-badge{
+        padding: 15px 20px;
+        
+    }
+
+    #exp-year{
+        font-size: 1.6rem;
+    }
+    
+    #exp-text{
+        font-size: .8rem;
+        font-weight: 500;
+    }
 
 }
 
@@ -191,7 +351,8 @@ section {
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .navbar,
     .navbar-items,
-    .teams-container {
+    .teams-container,
+    .features-container {
         flex-direction: column;
         gap: 20px;
     }
@@ -212,6 +373,16 @@ section {
 
     .team-img-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facts-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-level{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -65px;
     }
 
 }
