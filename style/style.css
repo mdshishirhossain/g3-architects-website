@@ -53,6 +53,10 @@
     color: #FF900E;
 }
 
+.text-hover:hover{
+    color: #FF900E;
+}
+
 .btn-primary {
     background-color: #FF900E;
     color: #ffffff;
@@ -69,9 +73,13 @@
 body {}
 
 header,
-main {
+main, footer {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+main{
+    margin-bottom: 100px;
 }
 
 .header-title {
@@ -277,12 +285,27 @@ section {
 .sponsors-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    gap: 100px;
     justify-content: center;
+    margin-top: 30px;
 }
 
+.sponsor{
+    max-width: 100px;
+}
 .sponsor img{
+    
     width: 100%;
+    filter: grayscale(100%);
+}
+
+footer p{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background: #FFF4E7;
+    text-align: center;
 }
 
 
@@ -322,6 +345,16 @@ section {
     .facts-card-container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .sponsors-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .sponsors-container>div{
+        margin: 0 auto;
+    }
+
 
     
 
@@ -384,5 +417,17 @@ section {
         margin: 0 auto;
         margin-top: -65px;
     }
+
+    .sponsors-container{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px;
+        
+ 
+    }
+
+    .our-sponsor{
+        margin: 0 auto;
+    }
+
 
 }
